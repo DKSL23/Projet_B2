@@ -287,3 +287,120 @@ main>h2 {
     text-align: center;
     font-weight: bold;
 }
+
+@media (max-width: 900px) {
+
+    .activity-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .presentation {
+        padding: 50px 10px;
+    }
+
+    .presentation h2,
+    .activities h2 {
+        font-size: 1.7rem;
+    }
+
+    .activity-list {
+        grid-template-columns: 1fr;
+    }
+
+    .activity {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .event-container {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .event-info {
+        padding: 20px;
+    }
+
+    .event-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .event-info p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    main {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    main > h2 {
+        font-size: 1.7rem;
+    }
+
+    #form-inscription {
+        padding: 25px 20px;
+    }
+
+    #form-inscription input,
+    #form-inscription select {
+        padding: 10px;
+    }
+
+    #form-inscription button {
+        width: 100%;
+    }
+}
