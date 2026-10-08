@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Association Étudiante</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="planning.html">Événements</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Inscription</h2>
+        <form id="form-inscription">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="tel" required>
+
+            <label for="event">Événement</label>
+            <select id="event" name="event" required>
+                <option value="">-- Choisir --</option>
+                <option value="integration">Soirée d'intégration</option>
+                <option value="tournoi">Tournoi sportif</option>
+                <option value="gala">Gala de fin d'année</option>
+            </select>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+        <p id="msg" style="display:none; color:green;">Inscription confirmée !</p>
+    </main>
+
+    <script>
+        document.getElementById('form-inscription').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('msg').style.display = 'block';
+            this.reset();
+        });
+    </script>
+</body>
+</html>
