@@ -18,4 +18,8 @@ des test, des fonctionnalités sans inquiétudes et repérer les erreurs avant q
 
 3) Un conflit Git se produit quand deux personnes modifient les mêmes lignes dans le même fichier mais sur des branches différentes. Quand on essaie de merge, Git voit deux versions différentes au même endroit et il sait pas laquelle garder, du coup il nous demande de régler ça nous-mêmes.
 
+5) Cela permet de maintenir la cohérence du code ainsi que de mieux anticiper et résoudre les conflits. (LEDUC Gabriel)
+
 6) La branche de release c'est une branche qu'on crée quand on estime que develop est prête pour la production. On fait les dernières vérifs et petites corrections dessus, sans rajouter de features. Quand c'est bon on merge dans main avec un tag, et on reporte aussi les corrections dans develop.
+
+8) Pour retrouver l'origin d'une modification on peut regarder l'historique des commits (LEDUC Gabriel)
