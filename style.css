@@ -221,3 +221,69 @@ nav {
 .event-info strong {
     color: #283593;
 }
+
+main>h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #283593;
+    font-size: 2rem;
+}
+
+#form-inscription {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+#form-inscription label {
+    margin-bottom: 7px;
+    color: #333;
+    font-weight: bold;
+}
+
+#form-inscription input,
+#form-inscription select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#form-inscription input:focus,
+#form-inscription select:focus {
+    outline: none;
+    border-color: #3f51b5;
+    box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.15);
+}
+
+#form-inscription button {
+    padding: 12px 20px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-inscription button:hover {
+    background-color: #303f9f;
+}
+
+#msg {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
